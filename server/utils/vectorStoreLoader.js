@@ -1,11 +1,13 @@
 import fs from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
-import { GoogleGenerativeAIEmbeddings } from "@langchain/google-genai"
-import { configDotenv } from "dotenv";
+import { GoogleGenerativeAIEmbeddings } from "@langchain/google-genai";
+import { config as configDotenv } from "dotenv";
+
+configDotenv(); // ✅ Load .env variables
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-
 
 // Cosine similarity function
 function cosineSimilarity(a, b) {
@@ -30,10 +32,10 @@ export async function loadVectorStore() {
       throw new Error("vectorStore.json must be an array of documents");
     }
 
-    // Init Gemini embeddings
+    // ✅ Use env variable
     const embeddings = new GoogleGenerativeAIEmbeddings({
       model: "embedding-001",
-      apiKey: "AIzaSyBV_mBomUshBRX4FyuDBgOUiWTjON205Os",
+      apiKey: process.env.GOOGLE_API_KEY,
     });
 
     return {

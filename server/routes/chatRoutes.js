@@ -1,12 +1,15 @@
 import express from "express";
 import { ChatGoogleGenerativeAI } from "@langchain/google-genai";
 import { loadVectorStore } from "../utils/vectorStoreLoader.js";
+import { config as configDotenv } from "dotenv";
+
+configDotenv();
 
 const router = express.Router();
 
 const model = new ChatGoogleGenerativeAI({
   model: process.env.GOOGLE_MODEL || "gemini-1.5-flash",
-  apiKey: "AIzaSyBV_mBomUshBRX4FyuDBgOUiWTjON205Os",
+  apiKey: process.env.GOOGLE_API_KEY, // ✅ now from .env
 });
 
 router.post("/", async (req, res) => {
