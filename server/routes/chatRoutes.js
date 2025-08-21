@@ -36,7 +36,7 @@ router.post("/", async (req, res) => {
       {
         role: "system",
         content:
-          "You are a helpful assistant. Use the provided context if relevant.",
+          "You are a helpful assistant. Use the provided context if relevant.dont use the same language always but stick to teh context",
       },
       { role: "user", content: `Context:\n${context}\n\nQuestion: ${query}` },
     ]);
