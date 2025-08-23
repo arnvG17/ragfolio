@@ -2,7 +2,7 @@
 import fs from "fs";
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
-import { embeddings } from "./embeddings/geminiembeddings.js";
+import { embeddings } from "./embeddings/geminiEmbeddings.js";
 
 async function main() {
   const raw = fs.readFileSync("me.txt", "utf-8");
