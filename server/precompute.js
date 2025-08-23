@@ -8,8 +8,8 @@ async function main() {
   const raw = fs.readFileSync("me.txt", "utf-8");
 
   const splitter = new RecursiveCharacterTextSplitter({
-    chunkSize: 350,
-    chunkOverlap: 50,
+    chunkSize: 550,
+    chunkOverlap: 100,
   });
 
   const docs = await splitter.createDocuments([raw]);

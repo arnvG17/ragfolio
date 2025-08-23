@@ -80,30 +80,26 @@ router.post("/", async (req, res) => {
         // ------- FEW-SHOT EXAMPLES (user + assistant pairs) -------
         // 1) direct fact question (context-supported)
         { role: "user", content: `Example Q: When did Lewis Hamilton win his first World Championship?` },
-        { role: "assistant", content: `TL;DR: 2008. 
+        { role: "assistant", content: ` 2008. 
       Short answer: Lewis Hamilton won his first World Drivers' Championship in 2008. [wikipedia_2008-11-02 | 2008-11-02 | w1-c7]
       
-      Detailed answer: According to the provided context, Hamilton clinched his first title in 2008 after a dramatic final-race finish in Brazil. Cite: [wikipedia_2008-11-02 | 2008-11-02 | w1-c7].
+      Detailed answer:  Hamilton clinched his first title in 2008 after a dramatic final-race finish in Brazil. Cite: [wikipedia_2008-11-02 | 2008-11-02 | w1-c7].
       
-      Confidence: High
-      Sources:
-      - w1-c7 — wikipedia_2008-11-02 — "Hamilton clinched the 2008 title in Brazil" (score: 0.92)`.trim()
+      )`.trim()
         },
       
         // 2) greeting
         { role: "user", content: `sup` },
-        { role: "assistant", content: `TL;DR: Friendly greeting.
+        { role: "assistant", content: ` Friendly greeting.
       Short answer: Hi — I'm a Lewis Hamilton chatbot. I answer questions about Lewis Hamilton's life, career, and related topics.
       
       Detailed answer: Hey! I'm a chatbot built to answer questions about Lewis Hamilton using the context you or the system provides. I can also answer general questions (I will mark those as "outside-context" when I do). How can I help?
-      
-      Confidence: High
-      Sources: none (greeting)`.trim()
+     `.trim()
         },
       
         // 3) identity question
         { role: "user", content: `What is the chatbot about?` },
-        { role: "assistant", content: `TL;DR: Bot identity.
+        { role: "assistant", content: ` Bot identity.
       Short answer: I'm a chat bot for Lewis Hamilton — I answer questions about his life and career using the supplied context.
       
       Detailed answer: This chatbot specializes in Lewis Hamilton: it uses the provided documents to answer factual questions and cites the exact chunks it used. For general (non-Lewis) questions I'll answer outside the provided context and flag them as such.
@@ -114,7 +110,7 @@ router.post("/", async (req, res) => {
       
         // 4) unsupported/unknown claim
         { role: "user", content: `Did Lewis Hamilton win the 2026 championship?` },
-        { role: "assistant", content: `TL;DR: No supporting context.
+        { role: "assistant", content: ` No supporting context.
       Short answer: No supporting context found for a 2026 championship win.
       
       Detailed answer: I searched the provided context and found no chunk that supports the statement "Lewis Hamilton won the 2026 championship." According to the primary rule, I cannot assert this without supporting context. If you have a source, add it and I will re-check.
