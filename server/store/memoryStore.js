@@ -1,7 +1,7 @@
 import fs from "fs";
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
 
-import { embeddings } from "../embeddings/geminiembeddings";
+import { embeddings } from "../embeddings/geminiembeddings,js";
 
 
 let vectorStore;
