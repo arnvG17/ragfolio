@@ -1,6 +1,8 @@
 import fs from "fs";
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
-import { embeddings } from "../embeddings/geminiembeddings";
+
+import { embeddings } from "../embeddings/geminiembeddings.js";
+>>>>>>> f8e6f2e8451be14f3e16db4dcc64296ce1446235
 
 let vectorStore;
 let chunksIndexed = 0;
