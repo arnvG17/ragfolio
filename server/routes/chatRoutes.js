@@ -9,7 +9,7 @@ const router = express.Router();
 
 const model = new ChatGoogleGenerativeAI({
   model: process.env.GOOGLE_MODEL || "gemini-1.5-flash",
-  apiKey: process.env.GOOGLE_API_KEY, // ✅ now from .env
+  apiKey: process.env.GOOGLE_API_KEY,
 });
 
 router.post("/", async (req, res) => {
@@ -19,116 +19,79 @@ router.post("/", async (req, res) => {
       return res.status(400).json({ error: "Query is required" });
     }
 
-    // Load vector store + run similarity search
+    // --- Step 1: Check for relevance using the vector store ---
     const vectorStore = await loadVectorStore();
-    const results = await vectorStore.similaritySearch(query, 3);
+    
+    // First, search for the single best matching document to check its score.
+    // similaritySearchWithScore returns an array of [Document, score] tuples.
+    const initialSearchResult = await vectorStore.similaritySearchWithScore(query, 1);
 
-    // Join context
-    const context = results
-      .map(
-        (r, i) =>
-          `Doc ${i + 1} (score ${r.score.toFixed(3)}):\n${r.pageContent}`
-      )
-      .join("\n\n");
+    // --- Step 2: Decide which mode to use based on the score ---
 
-    const response = await model.invoke([
-      {
-        role: "system",
-        content: `
-          # Your Persona & Core Rules
-          You are Hamilton AI, a friendly and conversational expert on Lewis Hamilton. You have three main behaviors depending on the user's input.
+    // This is the threshold for deciding if a question is "about" Lewis Hamilton.
+    // You will need to tune this value based on your testing. Start with 0.75.
+    // Higher (e.g., 0.8) is stricter, lower (e.g., 0.7) is more lenient.
+    const RELEVANCE_THRESHOLD = 0.75; 
 
-          ---
-          ### BEHAVIOR 1: Lewis Hamilton Expert (Your Primary Role)
-          This is your main purpose. When the user asks about Lewis Hamilton's life or career:
-          * **The Golden Rule:** Your answers MUST be based **exclusively** on the information within the provided 'Context'. Do not use outside knowledge for facts about him.
-          * **If Context is Missing:** If the information isn't in the context, simply say you don't have that specific detail (e.g., "Sorry, I don't have that information.").
+    let prompt;
+    let isHamiltonRelated = false;
 
-          ---
-          ### BEHAVIOR 2: General Knowledge Assistant (Your Secondary Role)
-          When the user asks about **any other topic** (e.g., definitions like "what is a paleontologist?", concepts like "DRS", science like "black holes"):
-          * **Switch Roles:** Acknowledge that it's outside your Hamilton expertise (e.g., "While my specialty is Lewis Hamilton, I can definitely answer that!").
-          * **Answer Accurately:** Provide a full, accurate, and helpful answer using your general training knowledge.
+    // Check if we found any document AND if its score is above our threshold.
+    if (initialSearchResult.length > 0 && initialSearchResult[0][1] >= RELEVANCE_THRESHOLD) {
+      // --- MODE 1: The question IS related to Lewis Hamilton ---
+      isHamiltonRelated = true;
+      console.log(`✅ Hamilton-related question detected. Score: ${initialSearchResult[0][1].toFixed(3)}`);
 
-          ---
-          ### BEHAVIOR 3: Handling Ambiguous Input (Your Fallback)
-          If the user's input is **not a clear question** or is ambiguous (e.g., just "i", "hello", "and then", or asking about you):
-          * **Do Not Guess:** Do not try to answer.
-          * **Clarify and Re-introduce:** Politely ask for clarification and briefly state what you can do.
-
-          ---
-          ### Universal Rule for ALL Clear Answers
-          **NO SOURCES OR CITATIONS!** Never mention your sources, "context", or "documents". Do not include citations like [Doc 1]. Just provide a clean, direct answer.
-        `.trim(),
-      },
-
-      // ------- FEW-SHOT EXAMPLES (Covering All Behaviors) -------
-
-      // Example of BEHAVIOR 1: Answering a Hamilton question
-      {
-        role: "user",
-        content: `When did Lewis Hamilton win his first World Championship?`,
-      },
-      {
-        role: "assistant",
-        content: `
-          Great question! I can tell you that Lewis Hamilton won his very first World Championship back in 2008. It was an incredibly exciting finish to the season, as he secured the title on the final corner of the last lap in Brazil.
-        `.trim(),
-      },
-
-      // Example of BEHAVIOR 2: Answering a general knowledge definition
-      {
-        role: "user",
-        content: `What is a paleontologist?`,
-      },
-      {
-        role: "assistant",
-        content: `
-          My main expertise is Lewis Hamilton, but I can definitely answer that for you! A paleontologist is a scientist who studies the history of life on Earth by examining the fossil record. They analyze fossils of plants, animals, and other organisms to understand evolution and how our planet has changed over millions of years.
-        `.trim(),
-      },
+      // Now that we know it's relevant, get a few more documents for richer context.
+      const contextResults = await vectorStore.similaritySearch(query, 4);
+      const context = contextResults
+        .map((r, i) => `--- Document ${i + 1} ---\n${r.pageContent}`)
+        .join("\n\n");
       
-      // Example of BEHAVIOR 3: Handling an ambiguous input
-      {
-        role: "user",
-        content: `i`,
-      },
-      {
-        role: "assistant",
-        content: `
-          I'm sorry, I didn't quite catch that. Could you please clarify your question? I can answer questions about Lewis Hamilton or other general topics.
-        `.trim(),
-      },
+      prompt = `
+        # Your Persona: Lewis Hamilton Expert
+        You are Hamilton AI, a friendly and conversational expert on Lewis Hamilton.
+        Your answers about Lewis Hamilton MUST be based exclusively on the information within the provided 'Context'.
+        You must act as if you know this information yourself. Never mention the context or documents.
+        
+        # Universal Rule
+        NO SOURCES OR CITATIONS. Just provide a clean, direct answer.
 
-      // Example of BEHAVIOR 3: Handling a question about the bot itself
-      {
-        role: "user",
-        content: `who are you`,
-      },
-      {
-        role: "assistant",
-        content: `
-          I'm Hamilton AI! I'm a chatbot designed to be an expert on the life and career of Lewis Hamilton, but I can also help with questions on a wide range of other topics. How can I help you today?
-        `.trim(),
-      },
-      
-      // Example of BEHAVIOR 2: Another general F1 question
-      {
-        role: "user",
-        content: `what is drs?`,
-      },
-      {
-        role: "assistant",
-        content: `
-          While my main focus is Lewis Hamilton, I can certainly explain that! The Drag Reduction System, or DRS, is an adjustable part of a Formula 1 car's rear wing. A driver can open it in specific zones on the track to reduce aerodynamic drag, which increases top speed and helps with overtaking.
-        `.trim(),
-      },
+        # Context
+        ${context}
 
-      // ------- END FEW-SHOT -------
-      { role: "user", content: `Context:\n${context}\n\nQuestion: ${query}` },
-    ]);
+        # Question
+        ${query}
+      `;
 
-    res.json({ answer: response.content, sources: results });
+    } else {
+      // --- MODE 2: The question is NOT related to Lewis Hamilton ---
+      isHamiltonRelated = false;
+      const score = initialSearchResult.length > 0 ? initialSearchResult[0][1].toFixed(3) : "N/A";
+      console.log(`❌ Unrelated question detected. Top Score: ${score}`);
+
+      prompt = `
+        # Your Persona: General Knowledge Assistant
+        You are Hamilton AI, a friendly and helpful AI assistant.
+        The user has asked a question that is not about your primary subject, Lewis Hamilton.
+        Provide a full, accurate, and helpful answer to the user's question using your general knowledge.
+
+        # Universal Rule
+        NO SOURCES OR CITATIONS. Just provide a clean, direct answer.
+
+        # Question
+        ${query}
+      `;
+    }
+
+    // --- Step 3: Invoke the model with the dynamically created prompt ---
+    const response = await model.invoke(prompt);
+
+    res.json({ 
+      answer: response.content,
+      isHamiltonRelated: isHamiltonRelated // Optional: send this to your frontend for debugging
+    });
+
   } catch (error) {
     console.error("💥 Chat error:", error);
     res.status(500).json({ error: "Something went wrong" });
