@@ -97,7 +97,7 @@ router.post("/", async (req, res) => {
       fetchK: 5,
     });
     
-    const RELEVANCE_THRESHOLD = 0.75; 
+    const RELEVANCE_THRESHOLD = 0.69; 
     let finalPrompt;
     let isHamiltonRelated = false;
 
