@@ -9,7 +9,7 @@ configDotenv();
 const router = express.Router();
 
 const model = new ChatGoogleGenerativeAI({
-  model: process.env.GOOGLE_MODEL || "gemini-1.5-flash-latest",
+  model: process.env.GOOGLE_MODEL || "gemini-pro",
   apiKey: process.env.GOOGLE_API_KEY2,
 });
 
