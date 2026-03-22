@@ -1,10 +1,11 @@
 import fs from "fs/promises";
+import fsSync from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import { GoogleGenerativeAIEmbeddings } from "@langchain/google-genai";
 import { config as configDotenv } from "dotenv";
 
-configDotenv(); // ✅ Load .env variables
+configDotenv(); // Load .env variables
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -25,18 +26,26 @@ function cosineSimilarity(a, b) {
 // Main function to load and expose our custom vector store
 export async function loadVectorStore() {
   try {
+    console.log(" Loading vector store...");
     const filePath = path.join(__dirname, "../vectorStore.json");
+    console.log(` Reading file: ${filePath}`);
+    console.log(` Current directory: ${__dirname}`);
+    console.log(` File exists: ${fsSync.existsSync(filePath)}`);
     const raw = await fs.readFile(filePath, "utf-8");
     const data = JSON.parse(raw);
+    console.log(` Loaded ${data.length} documents`);
 
     if (!Array.isArray(data)) {
       throw new Error("vectorStore.json must be an array of documents");
     }
 
+    console.log(" Initializing embeddings...");
     const embeddings = new GoogleGenerativeAIEmbeddings({
-      model: "embedding-001",
+      modelName: "gemini-embedding-001",
+      taskType: "RETRIEVAL_DOCUMENT",
       apiKey: process.env.GOOGLE_API_KEY,
     });
+    console.log(" Embeddings initialized");
 
     // Internal helper function to embed and score all documents
     const _search = async (query) => {
