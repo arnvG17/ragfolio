@@ -5,6 +5,7 @@ configDotenv(); // ✅ loads .env into process.env
 
 // Initialize Gemini embeddings
 export const embeddings = new GoogleGenerativeAIEmbeddings({
-  modelName: "embedding-001", // optimized for vector search
-  apiKey: process.env.GOOGLE_API_KEY, // ✅ now pulled from .env
+  apiKey: process.env.GOOGLE_API_KEY,
+  modelName: "gemini-embedding-001", // Current 2026 stable standard
+  taskType: "RETRIEVAL_DOCUMENT", // Optimize for document retrieval
 });

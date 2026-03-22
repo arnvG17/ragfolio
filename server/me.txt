@@ -1,250 +1,118 @@
-Certainly! Here’s an expanded, more detailed 1,000-word reference text on Lewis Hamilton that covers his career, driving style, achievements, and off-track influence with greater depth, useful for training a RAG bot:
-
-This description is about Lewis Carl Davidson Hamilton, a British Formula 1 racing driver widely regarded as one of the greatest and most influential in the history of the sport. Born in 1985 in Stevenage, England, he rose from a karting prodigy to become a seven-time World Drivers' Champion, tying the all-time record. Known for his exceptional speed, tire management, racecraft, and mental resilience, Hamilton has set numerous records including most race wins, pole positions, and podium finishes. Beyond racing, he is a prominent advocate for diversity, environmental sustainability, and social justice, using his global platform to drive change both inside and outside Formula 1. His career includes championship-winning tenures with McLaren and Mercedes, and as of 2025, he races for Ferrari, continuing his pursuit of excellence and legacy in motorsport.
-***
-
-**Lewis Hamilton: Motorsport Icon and Cultural Trailblazer**
-
-Lewis Carl Davidson Hamilton was born on January 7, 1985, in Stevenage, Hertfordshire, England. He is widely recognized as one of the most outstanding and influential figures in the history of Formula 1. Over a career spanning nearly two decades, Hamilton has not only rewritten records on the racetrack but also transformed the global perception of the sport—bringing diversity, activism, and cultural relevance to a traditionally exclusive arena.
-
-### Early Life and Karting Beginnings
-
-Hamilton’s motorsport journey began at a remarkably young age. His father, Anthony Hamilton, recognized his prodigious talent and supported his early interest in karting, a crucial grassroots platform for many racing drivers. By the age of eight, Lewis was already competing in karting events and quickly accumulated numerous victories. His precocity was notable; by age ten, Hamilton was dominating local and national karting championships, showcasing exceptional racecraft, technical feedback, and raw speed.
-
-Hamilton’s karting years were marked by intense competition and early partnership with influential mentors. In 1998, his talent came to the attention of McLaren’s Ron Dennis, who famously signed Hamilton to the McLaren Driver Development Support programme with the words, “Call me when you get to Formula 1.” This endorsement was pivotal, as it provided Hamilton with crucial financial backing, technical resources, and career guidance through the junior ranks.
-
-### Climbing the Motorsport Ladder: Junior Formulas
-
-Hamilton’s ascent through the feeder categories was characterized by a methodical progression and consistent dominance. After karting, he stepped into Formula Renault UK in 2003, finishing as runner-up in his debut season. The following year, Hamilton won the Formula Renault UK championship while competing against well-established rivals, demonstrating his adaptability to more powerful, aerodynamic cars.
-
-In 2005, Hamilton competed in the highly competitive Formula 3 Euro Series, securing multiple wins and podiums. That same year, he also tested Formula 1 cars for McLaren, gaining invaluable experience in cutting-edge machinery. The next critical step was GP2, the final proving ground before Formula 1. In 2006, Hamilton raced for ART Grand Prix and clinched the GP2 championship in his rookie season, a remarkable achievement that cemented his status as the most promising young talent in motorsport.
-
-### Formula 1 Breakthrough with McLaren (2007–2012)
-
-Hamilton made his Formula 1 debut with McLaren in 2007 alongside two-time World Champion Fernando Alonso. His rookie season was extraordinary—he won four races and, after a gripping title fight with Ferrari’s Kimi Räikkönen, finished second in the championship by a single point. Hamilton made history as the first black driver in Formula 1 and instantly became a global star. His ability to perform under pressure, combined with aggressive but intelligent driving, gained widespread acclaim.
-
-In 2008, Hamilton’s talent culminated in becoming the youngest Formula 1 World Champion at just 23 years old. The season finale in Brazil remains iconic, where Hamilton clinched the title by overtaking Toyota’s Timo Glock on the final corner of the last lap, snatching the championship by one point from Felipe Massa.
-
-Though the following years (2009–2012) had ups and downs, including team challenges and fierce competition from Red Bull Racing’s Sebastian Vettel, Hamilton established himself as a consistent front-runner with multiple race wins and podiums. His relationship with McLaren, however, became strained due to internal politics and car performance issues.
-
-### Dominance with Mercedes: The Golden Era (2013–Present)
-
-In 2013, Hamilton made a career-defining move to Mercedes-AMG Petronas Formula One Team, which was then undergoing a resurgence with its new hybrid engine era. This partnership marked the beginning of one of the most dominant eras by any driver-team combination in motorsport history.
-
-From 2014 onwards, Hamilton won six World Championships (2014, 2015, 2017, 2018, 2019, 2020), battling and overcoming rivals like teammate Nico Rosberg, Sebastian Vettel, and later Max Verstappen. His win tally and pole positions soared, breaking numerous all-time records:
-
-- Most pole positions in Formula 1 history
-- Most career podium finishes
-- Joint record for most World Championships with seven titles (equaling Michael Schumacher)
-
-Hamilton’s technical proficiency is characterized by an extraordinary ability to extract maximum performance from the car in all conditions. His smooth yet aggressive driving style, strategic tire management, and adaptability to different circuits and race scenarios have set new standards. For example, his mastery in wet-weather conditions and qualifying laps is often cited as unparalleled.
-
-### Driving Style and Technical Prowess
-
-Hamilton is renowned for his aggressive but calculated driving approach. He excels at late braking maneuvers, using precise car control to maximize corner entry speed without losing grip. His tire management during races—balancing pace while preserving tire life—allows him to execute strategic pit stops and sustain faster average speeds over race distance.
-
-Furthermore, Hamilton’s feedback to engineers is highly prized. He has been deeply involved in car development, helping Mercedes tailor the car setup to suit different tracks and weather conditions. His ability to communicate intricate handling nuances has improved the team’s technical understanding and race-day performance.
-
-### Off-Track Impact and Activism
-
-Beyond his on-track success, Hamilton has become a powerful voice for social justice, environmental sustainability, and inclusion in motorsport. He has been an outspoken advocate against racism, launching initiatives to increase diversity within Formula 1 and motorsport more broadly, which historically have lacked representation from minority groups.
-
-In 2020, Hamilton played a key role in the sport’s response to the global Black Lives Matter movement, urging Formula 1 leaders to take action. He also founded the Hamilton Commission, dedicated to researching the lack of diversity in UK motorsport and recommending ways to tackle systemic barriers.
-
-Hamilton’s activism extends to environmental issues; he has committed to a vegan lifestyle and launched sustainable fashion projects. Through his celebrity and social media platforms, he promotes awareness of climate change and animal rights.
-
-### Personality, Philanthropy, and Legacy
-
-Lewis Hamilton is not just an athlete but a cultural icon. He has diversified interests including fashion, music, and film, appearing in documentaries and collaborations with major brands. His style, charisma, and global appeal have made him one of the most marketable sports personalities.
-
-Philanthropically, Hamilton supports numerous charities focusing on children, education, and health. He has used his wealth and influence to create opportunities for disadvantaged youth and advocate for mental health awareness.
-
-As of 2025, Hamilton continues to race at the highest level while shaping the future of Formula 1 with his multifaceted impact. His legacy combines unmatched sporting achievements with pioneering efforts to ensure the sport is more inclusive and socially responsible.
-
-***
-
-If you want me to add specific stats, detailed race analyses, or emphasize aspects like his rivalry dynamics or technical car developments, please let me know!
-
-Here is an in-depth, detailed overview of Lewis Hamilton covering his racing abilities, racing teams, teammates, personal life, and Wikipedia-based information:
-
-***
-
-### Racing Abilities of Lewis Hamilton
-
-Lewis Hamilton is renowned for being an exceptionally well-rounded driver with multiple key strengths that have established him as one of the best in Formula 1 history. Key aspects of his racing ability include:
-
-- **Tire Management:** Hamilton has a phenomenal natural feel for tires, allowing him to preserve their performance longer than most competitors during races. This skill gives him strategic flexibility and often means he can maintain faster race pace while others struggle with degradation.
-- **Racecraft and Overtaking:** He is aggressive yet precise in his overtaking maneuvers, excelling at gaining positions even in tightly contested situations, often under immense pressure.
-- **Qualifying Pace:** Early in his career, Hamilton was particularly noted for blistering qualifying speed, regularly securing pole positions with his ability to deliver near-perfect laps.
-- **Race Consistency and Composure:** Hamilton's mental strength and calmness under pressure make him extremely consistent over race distances, capable of delivering multiple fast laps in sequence, even under challenging conditions.
-- **Adaptability:** He adapts seamlessly to changing track and weather conditions, which enhances his race-day performance in unpredictable scenarios.
-- **Maximizing Car Performance:** Hamilton can extract more speed from his car than almost any other driver, pushing the vehicle to its absolute limit while maintaining control, a rare trait shared by only a few elite drivers. 
-
-Experts and fans often highlight Hamilton's "hammer time" ability — the capacity to deliver blisteringly quick laps on demand, especially in crucial moments.[1]
-
-***
-
-### Racing Teams and Teammates
-
-Lewis Hamilton’s Formula 1 career has included tenures at two major teams:
-
-#### McLaren (2007–2012)
-Hamilton started his F1 career with McLaren, which had supported him since his karting days through their young driver programme. His notable teammates at McLaren were:
-
-- **Fernando Alonso (2007):** A fierce competitor with whom Hamilton had a tough rookie season.
-- **Heikki Kovalainen (2008-2009):** More of a supportive number two, Kovalainen was unable to consistently challenge Hamilton, who won his first championship with McLaren in 2008.
-- **Jenson Button (2010-2012):** A seasoned driver who provided stronger competition but generally was outperformed by Hamilton.
-
-#### Mercedes (2013–2024)
-Hamilton’s move to Mercedes marked a turning point, as the team evolved into a dominant force in Formula 1. His teammates there included:
-
-- **Nico Rosberg (2013–2016):** Childhood karting rival, Nico became one of Hamilton’s fiercest on-track rivals. The pair battled fiercely, with Hamilton winning three World Championships during this period; Rosberg left the sport after winning the title in 2016.
-- **Valtteri Bottas (2017–2021):** A consistent teammate but generally outpaced by Hamilton, Bottas played a supporting role in Hamilton’s multiple championship victories.
-- **George Russell (2022–2024):** A younger talents, Russell has been a strong ally and competitor with a generally respectful team relationship.
- 
-In 2025, Hamilton joined **Ferrari**, partnering with Charles Leclerc.[2][3][4][5]
-
-***
-
-### Personal Life
-
-Hamilton has had a high-profile personal life with several notable relationships, though he prefers to keep his private life relatively discreet. Key points are:
-
-- He was previously in an on-off relationship with singer Nicole Scherzinger.
-- Other rumored relationships include with celebrities such as Gigi Hadid and Camila Cabello.
-- His first serious relationship was with childhood sweetheart Jodia Ma.
-- As of 2025, Hamilton is reportedly single, focusing on his career but valuing love and emotional support.
-- Hamilton has spoken about the challenges of maintaining privacy given his celebrity status and the intense media scrutiny of his romantic life.
-
-Hamilton is also known for his fashion sense, environmental activism, and philanthropy outside racing.[6][7][8][9]
-
-***
-
-### Wikipedia Overview (Summarized and Updated)
-
-Sir Lewis Carl Davidson Hamilton (born 7 January 1985) is a British Formula 1 racing driver currently racing for Ferrari. He has won the joint-record seven World Drivers' Championship titles and holds numerous records including most wins (105+), pole positions (104+), and podium finishes (202+).
-
-- Hamilton rose through karting and junior formula ranks, backed early by McLaren’s development program.
-- Debuting in F1 in 2007, he quickly became a title contender, narrowly missing the championship in his rookie season and winning it in 2008.
-- He raced for McLaren until 2012 before joining Mercedes, where he achieved an era of dominance with six world titles between 2014 and 2020.
-- Hamilton's Mercedes years were marked by intense rivalries, especially with teammate Nico Rosberg.
-- In 2025, Hamilton transitioned to Ferrari, aiming for further success with the Italian team.
-- Beyond racing, Hamilton is heralded for his efforts in promoting diversity and combating racism in motorsport, along with his environmental and social activism.
-- He was knighted in 2021 and listed among the world’s most influential people.
-
-Hamilton's career is punctuated by technical mastery, mental fortitude, and a unique ability to perform under pressure with relentless consistency.[10][11][12]
-
-***
-
-If you want, I can further expand on any of these topics or provide specific statistics and race highlights. Would you like that?
-
-Here is a large volume of detailed, data-rich information about Lewis Hamilton's racing career, racing abilities, teams, teammates, and personal life based primarily on Wikipedia and stats sources:
-
-***
-
-### Lewis Hamilton: Career Hard Data and Profile
-
-#### Personal and Background Data
-- Full Name: Sir Lewis Carl Davidson Hamilton
-- Birthdate: January 7, 1985
-- Birthplace: Stevenage, Hertfordshire, England
-- Nationality: British
-- Parents: Anthony Hamilton (Afro-Grenadian descent), Carmen Larbalestier (White British)
-- Raised Catholic, parents separated when Lewis was 2; lived with mother until age 12, then with father
-- Early karting start: age 6
-- Signed to McLaren Young Driver Programme: 1998 (at age 13)
-- Karting major wins: Direct-drive Karting World Cup and European Championship (2000)
-- Notable childhood rivalry and teammate: Nico Rosberg
-
-***
-
-#### Formula 1 Career Summary
-- Formula 1 Debut: 2007 Australian Grand Prix with McLaren
-- Teams:
-  - McLaren (2007–2012)
-  - Mercedes (2013–2024)
-  - Ferrari (2025–present)
-- Career highlights include:
-  - 7 World Drivers' Championship titles (tied with Michael Schumacher)
-  - Most race wins: 105+
-  - Most pole positions: 104+
-  - Most podium finishes: 202+
-  - Record for most points scored in a season: 413 points (2019)
-  - First black driver in F1 history
-  - Youngest World Champion at the time in 2008 (age 23)
-  - Set record for most wins in a season in 2020 (11 wins)
-  - First F1 driver to surpass 100 wins and 100 pole positions (both achieved in 2021)
-  - Multiple consecutive seasons with points finishes and podiums
-
-***
-
-#### Racing Teams and Teammates (with involvement years and number of races together)
-
-| Teammate        | Years       | Number of Races Together |
-|-----------------|-------------|--------------------------|
-| Fernando Alonso  | 2007        | 17                       |
-| Heikki Kovalainen | 2008–2009  | 35                       |
-| Jenson Button   | 2010–2012   | 58                       |
-| Nico Rosberg    | 2013–2016   | 78                       |
-| Valtteri Bottas | 2017–2021   | 100                      |
-| George Russell  | 2022–2024   | 68                       |
-| Nyck de Vries   | 2022        | 2                        |
-| Frederik Vesti  | 2023        | 2                        |
-| Andrea Kimi Antonelli | 2024    | 2                        |
-| Charles Leclerc | 2025–present | 3                        |
-
-***
-
-#### Detailed Racing Performance Data (selected key stats)
-
-- Championships: 7 (2008, 2014, 2015, 2017, 2018, 2019, 2020)
-- Race Wins: 105+ (as of end 2024)
-- Poles: 104+ (most in F1 history)
-- Podiums: 202+
-- Points: Over 4500 career points (approximate as of 2024)
-- Fastest Laps: 60+ (exact varies by season)
-- Races contested: 310+ (start of 2025)
-- First Win: 2007 Canadian GP (rookie season)
-- Youngest Pole Position: 2007 (rookie season)
-- Most Wins in a Season: 11 (achieved multiple times)
-- Longest Top-10 finish streak: 33 races (2017-2018)
-- Wet-weather record: Unbeaten in wet races from 2014 to 2019 season until broken by Max Verstappen in 2019 German GP
-
-***
-
-#### Driving Style and Technical Skills
-
-- Aggressive but controlled racecraft, especially noted for late braking and overtaking precision
-- Exceptional tire management skills, allowing longer stints and strategic advantages
-- Adaptation to car setup and track conditions, often running lower fuel and balancing corner exit speeds for momentum carry through turns
-- Mental resilience and consistency allow him to deliver peak performance in pressured races and seasonal battles
-- Recognized by engineers for delivering detailed, valuable technical feedback improving car development
-- Ranked among the best qualifiers in F1 history due to his peak laps and car control
-
-***
-
-#### Personal Life Highlights and Off-Track Data
-
-- Known for high-profile relationships, notably with singer Nicole Scherzinger (on-off)
-- Interests include fashion, music, philanthropy, and environmental activism
-- Advocate for racial equality and inclusion in motorsport; founder of the Hamilton Commission
-- Vegan lifestyle and promoter of sustainable living
-- Knighted in 2021 for contributions to motorsport and charitable work
-- Estimated earnings from F1 contracts and endorsements exceed £400 million over career
-
-***
-
-##### Notable Career Milestones Timeline
-
-- 1998: Signed to McLaren Young Driver Programme
-- 2007: F1 debut, rookie records set
-- 2008: First World Championship, youngest champion at that time
-- 2013: Joined Mercedes
-- 2014-2020: Six further World Championships; era of dominance begins
-- 2021: Contract extended to 2023; intense title battle with Max Verstappen
-- 2022: First winless season in F1 career due to car issues
-- 2024: Last season with Mercedes, winning record 9th British GP
-- 2025: Joined Ferrari, childhood dream fulfilled
-
-***
-
+===========================================
+PERSONAL CONTEXT FILE — ARNAV GAWANDI
+(For RAG Model Training)
+===========================================
+
+--- PERSONAL IDENTITY ---
+Name: Arnav Gawandi
+Location: Mumbai, India
+Phone: 9920704194
+Email: arnavog@gmail.com
+LinkedIn: linkedin.com/in/arnav-gawandi
+GitHub: github.com/arnav-gawandi
+
+--- EDUCATION ---
+Institution: Dwarkadas J. Sanghvi College of Engineering (DJSCE)
+Degree: B.Tech in Computer Science and Engineering (specialization: Data Science)
+Duration: 2024 – 2028
+Location: Mumbai, India
+
+Prior Schooling: Ryan International School, Mumbai (High School)
+
+--- PROFESSIONAL EXPERIENCE ---
+
+1. Web-Dev Mentee | DJS S4DS & DJS CODEAI
+   Period: Aug 2025 – Aug 2026 | Mumbai, India
+   - Selected as a mentee in two prestigious college technical clubs focused on Data Science and AI.
+   - Gained hands-on experience in full-stack web development and AI-driven applications.
+   - Collaborated with senior developers to build and deploy AI-integrated web solutions.
+
+2. Web Developer | Konkanai Agro-Tourism
+   Period: 2025 | Mumbai, India
+   - Designed and developed a fully functional website for a tourism agency.
+   - Delivered a user-friendly interface showcasing agro-tourism offerings.
+   - Handled end-to-end development: UI design, content integration, and deployment.
+
+3. Domain Winners – WEB/APPLICATION | DJS ACM – Lines of Code 8.0
+   Period: Feb 2026 | Juhu, Mumbai
+   - Won the Web/Application domain at Lines of Code 8.0, a competitive hackathon by DJS ACM.
+   - Demonstrated strong full-stack development and problem-solving skills under time constraints.
+
+--- PROJECTS ---
+
+1. AI-Based ML Online Compiler
+   Tech Stack: Python, Pyodide, WebAssembly, LLM Orchestration
+   - Browser-based ML compiler using a multi-agent LLM orchestrator.
+   - Streams generated Python code and executes it client-side via Pyodide WebAssembly runtime (zero setup).
+   - Enforced strict LLM prompt contract achieving >95% first-run execution success rate.
+   - Shipped "Autopilot" — an agentic pipeline that plans and streams live hyperparameter trials and pre-positions user controls at the optimal configuration.
+
+2. The Noting App — AI Summarizer, Quiz App & Context-Aware Chatbot
+   - AI-powered document summarization and note-taking platform.
+   - Users can upload documents and receive instant AI-generated summaries.
+   - Context-aware chatbot lets users ask questions about their uploaded content.
+
+3. Riverside-Clone for Online Educators
+   Tech Stack: ASR, WebRTC, Cloud-Native Pipeline
+   - Riverside.fm-inspired teaching platform for high-quality remote recording with real-time AI assistance.
+   - Live transcription using ASR, interactive chat for contextual Q&A.
+   - Progressive chunk-based recording for reliability.
+   - Cloud-native pipeline for streaming, buffering, and storing camera-quality audio/video with minimal latency.
+
+4. RAG-Based Portfolio
+   Tech Stack: Langchain, RAG Pipeline, Next.js
+   - Personal portfolio website powered by a Retrieval-Augmented Generation (RAG) pipeline.
+   - Visitors can interactively query information about Arnav's skills, projects, and experience.
+
+--- TECHNICAL SKILLS ---
+
+Generative AI:
+  - Langchain, Langgraph
+  - RAG Pipelines
+  - Multi-Agent LLM Orchestration
+  - AI-based Application Development
+
+Web Development:
+  - MERN Stack (MongoDB, Express, React, Node.js)
+  - Next.js
+  - JavaScript (Frontend + Backend)
+
+Programming Languages:
+  - JavaScript
+  - Python
+
+Tools & Platforms:
+  - Git, GitHub
+  - WebAssembly (Pyodide)
+  - Automatic Speech Recognition (ASR)
+  - Cloud-Native Pipelines
+  - WebRTC
+
+--- COURSES & CERTIFICATIONS ---
+- AWS Machine Learning Foundations — Amazon Web Services (AWS) India
+
+--- PERSONAL INTERESTS ---
+
+Sports:
+  - Football (soccer): Passionate fan and follower of the sport.
+  - Formula 1: Enthusiastic F1 fan; follows races, team strategies, and driver standings.
+
+Automotive:
+  - Cars: Strong interest in automobiles — performance cars, car culture, automotive engineering.
+  - Bikes: Enthusiast for motorcycles and bike culture.
+
+Music:
+  - Genres: Hip-Hop, Rap, Jazz
+  - Listens to a wide variety of music; music is a significant part of daily life.
+  - Platforms: Spotify (primary streaming platform)
+
+Movies & Entertainment:
+  - Enjoys watching movies across genres.
+  - Keeps up with film releases and cinema culture.
+
+--- PERSONALITY & BACKGROUND SUMMARY ---
+Arnav Gawandi is a first-year B.Tech Computer Science student at DJSCE Mumbai with a strong focus on AI, full-stack web development, and GenAI tooling. Despite being in his first year, he has already built production-grade AI-powered applications, won a competitive hackathon, and secured mentorships in two technical college clubs. Outside of tech, he is passionate about football, Formula 1, cars, bikes, music (hip-hop, rap, jazz), and movies — reflecting a well-rounded, curious personality with both technical depth and cultural breadth.
+
+===========================================
+END OF CONTEXT FILE
+===========================================
